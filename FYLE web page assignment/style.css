@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Popins",sans-serif;
+}
+
+body{
+    background: #f1f1f1;
+}
+.top{
+    color: black;
+}
+.head{
+    background: rgb(87, 221, 210);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar ul{
+    display: inline;
+    gap: 10px;
+}
+
+li{
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+}
+.logo{
+    height: 30px;
+    width: 50px; 
+}
+
+.profile-img{   
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #40eef4;
+    padding: 3px;
+    margin:30px ;
+}   
+
+
+.image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    float: left;
+}
+ 
+
+.cover{
+    width: 800px;
+    height: 100px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box{
+    margin: 10px;
+    width: 300px;
+    height: 100px;
+    box-shadow: -1px 0 10px #000000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline;
+    gap: 10px;
+}
+
+button{
+    margin-left: 5px;
+    color: darkcyan;
+    display: inline;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.pagination ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 8px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.pagination ul li{
+  color: #20B2AA;
+  list-style: none;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+.pagination ul li.numb{
+  list-style: none;
+  height: 45px;
+  width: 45px;
+  margin: 0 3px;
+  line-height: 45px;
+  border-radius: 50%;
+}
+.pagination ul li.numb.first{
+  margin: 0px 3px 0 -5px;
+}
+.pagination ul li.numb.last{
+  margin: 0px -5px 0 3px;
+}
+.pagination ul li.dots{
+  font-size: 22px;
+  cursor: default;
+}
+.pagination ul li.btn{
+  padding: 0 20px;
+  border-radius: 50px;
+}
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover{
+  color: #fff;
+  background: #20B2AA;
+}
